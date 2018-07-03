@@ -79,7 +79,7 @@ namespace continuous_colormap
             if (x <= 0) return color_on_vertical_edge(0, y);
             if (x >= w - 1) return color_on_vertical_edge(w - 1, y);
 
-            if (y <= 0) return color_on_vertical_edge(x, 0);
+            if (y <= 0) return color_on_horizontal_edge(x, 0); // bug found by a compiler warning. Hah!
             if (y >= h - 1) return color_on_horizontal_edge(x, h - 1);
 
             bool x_close_to_edge = close_to_int(x);
