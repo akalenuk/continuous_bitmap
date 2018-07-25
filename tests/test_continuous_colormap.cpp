@@ -41,7 +41,7 @@ int main(){
         }
     }
     std::fstream fs;
-    fs.open("tests/test_continuous_colormap.html", std::fstream::out);
+    fs.open("test_continuous_colormap.html", std::fstream::out);
     fs << html_plotting::table_from_canvas(canvas3);
     fs.close();
 
