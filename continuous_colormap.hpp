@@ -5,7 +5,7 @@
 namespace continuous_colormap
 {
     constexpr int COLOR_DEPTH = 8;
-    constexpr double SMALL_ENOUGH_DXY = 1.0 / std::pow(2, COLOR_DEPTH);
+    constexpr double SMALL_ENOUGH_DXY = 1. / 256;
 
     template<class Color>
     using DiscreteColormap = std::function<Color(std::array<int, 2>)>;  // lambda decays to function pointer only when not enclosing
