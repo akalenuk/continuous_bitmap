@@ -1,6 +1,8 @@
+#include <array>
 #include <cmath>
 #include <algorithm>
 #include <functional>
+#include <vector>
 
 namespace continuous_colormap
 {

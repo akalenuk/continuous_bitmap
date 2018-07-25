@@ -1,4 +1,4 @@
 all:
-	g++ -std=c++14 -O0 -g test_continuous_colormap.cpp -o test_continuous_colormap
+	clang++ -std=c++14 -O0 -g test_continuous_colormap.cpp -o test_continuous_colormap
 clean:
 	rm test_continuous_colormap

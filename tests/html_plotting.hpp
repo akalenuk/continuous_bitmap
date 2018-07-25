@@ -1,6 +1,7 @@
 #include <array>
 #include <functional>
 #include <memory>
+#include <vector>
 
 namespace html_plotting
 {

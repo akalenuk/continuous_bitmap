@@ -1,14 +1,15 @@
-#include "../continuous_colormap.hpp"
-
 #include "html_plotting.hpp"
 #include "pm5544.hpp"
 
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 using Double_3 = std::array<double, 3>;
 Double_3 operator+ (Double_3 a, Double_3 b){return {a[0] + b[0], a[1] + b[1], a[2] + b[2]};}
 Double_3 operator* (Double_3 a, double b){return {a[0] * b, a[1] * b, a[2] * b};}
+
+#include "../continuous_colormap.hpp"
 
 Double_3 pm5544(std::array<int, 2> xy){
     return {static_cast<double>(PM5544.pixel_data[3 * (xy[1] * PM5544.width + xy[0])]),
